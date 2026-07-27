@@ -67,7 +67,7 @@ Diagrams used in coder training live under
 python -m venv .venv
 # Windows: .venv\Scripts\activate
 # Unix:    source .venv/bin/activate
-pip install -r labeling_platform/requirements.txt
+pip install -r requirements.txt
 streamlit run labeling_platform/app.py
 ```
 
@@ -84,6 +84,11 @@ streamlit run app.py
 |---|---|---|
 | `demo` | `demo1234` | coder |
 | `admin` | `admin1234` | admin |
+
+Because the public bundle contains only `DEMO*` subjects, it automatically
+uses **session-only public demo mode**: registration is disabled and saves
+never modify repository files. See [`SECURITY.md`](SECURITY.md) for deployment
+controls.
 
 Suggested walkthrough: sign in as `demo` → open **Step 4 · Score Answers** →
 label a few DEMO Q/A items → sign in as `admin` → open the **Agreement** view

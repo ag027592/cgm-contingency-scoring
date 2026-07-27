@@ -141,6 +141,9 @@ def detect_public_demo_mode() -> bool:
 
 
 PUBLIC_DEMO_MODE = detect_public_demo_mode()
+PUBLIC_DEMO_SESSION_SECRET = (
+    os.environ.get("CGM_SESSION_SECRET", "").strip() or secrets.token_hex(32)
+)
 
 DEMOGRAPHICS_FIELDS: List[tuple] = [
     ("sex_atbirth", "Sex at Birth"),
@@ -1380,6 +1383,8 @@ def authenticate(username: str, password: str) -> Optional[dict]:
 
 
 def get_session_secret() -> bytes:
+    if PUBLIC_DEMO_MODE:
+        return PUBLIC_DEMO_SESSION_SECRET.encode("utf-8")
     if not SESSION_SECRET_PATH.exists():
         SESSION_SECRET_PATH.write_text(secrets.token_hex(32), encoding="utf-8")
     return SESSION_SECRET_PATH.read_text(encoding="utf-8").strip().encode("utf-8")
