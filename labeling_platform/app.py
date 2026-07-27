@@ -4611,7 +4611,7 @@ TASK_SHORT_INTRO = (
     "**continuous glucose monitoring (CGM)** feedback. You will read short interview "
     "answers and score how each speaker describes the link between glucose feedback and "
     "behavior. **This public demo uses synthetic DEMO subjects only** (no PHI). "
-    "New here? Open the **Register** tab for a full task overview and to create an account."
+    "New here? Open **Demo Access** for the public credentials and session-safety overview."
 )
 
 PRELIMINARY_EXAMPLES_INTRO = (

@@ -4,6 +4,7 @@
 [![CI](https://github.com/ag027592/cgm-contingency-scoring/actions/workflows/smoke.yml/badge.svg)](https://github.com/ag027592/cgm-contingency-scoring/actions/workflows/smoke.yml)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B.svg)](https://streamlit.io/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Open-FF4B4B.svg)](https://cgm-contingency-scoring.streamlit.app/)
 [![Citation File](https://img.shields.io/badge/CITATION-cff-lightgrey.svg)](CITATION.cff)
 
 Human-in-the-loop **annotation platform** for scoring how people talk about
@@ -61,6 +62,9 @@ Diagrams used in coder training live under
 | Session auth | bcrypt passwords + signed cookie for local lab use |
 
 ## Quick start
+
+**[Open the public Streamlit demo](https://cgm-contingency-scoring.streamlit.app/)** —
+synthetic data only, with session-isolated annotations.
 
 ```bash
 # from repository root
