@@ -1,8 +1,14 @@
-# G2 Coding Labeling Platform — User Manual
+# CGM Contingency Scoring — User Manual
 
 **Audience:** Coders, clinicians / reviewers / PIs, and adjudication reviewers  
 **Interface language:** American English (this manual matches the UI)  
-**Data snapshot:** G2 study · 29 subjects with Q/A interview line items · 30 subjects with CGM / demographics  
+**Public demo snapshot:** synthetic subjects `DEMO01`–`DEMO03` only (software demonstration)  
+**Full-study layout (IRB data, not public):** same app + codebook against private G1/G2 exports
+
+> This manual describes the **product** as deployed for multi-rater clinical coding.
+> Counts such as “29 subjects / 58 check samples” refer to a full private deployment.
+> The public GitHub release ships a smaller synthetic set so reviewers can run the UI
+> without PHI.
 
 ---
 
@@ -74,40 +80,6 @@
 
 UI diagrams (SVG) ship with this release. PNG screenshots of live study sessions are intentionally omitted to avoid exposing participant text; regenerate locally with `python scripts/capture_manual_screenshots.py` on your own deployment.
 
-#### Screenshot gallery (matches Visual Guide tab)
-
-**Figure 0 — Full Annotate page overview**
-
-![Figure 0 — Full Annotate page overview](docs/manual_images/01-annotate-full-page.png)
-
-**Figure A — Navigation and Q/A cards**
-
-![Figure A — Navigation and Q/A cards](docs/manual_images/02-annotate-top-qa.png)
-
-**Figure B — CGM Summary table**
-
-![Figure B — CGM Summary table](docs/manual_images/03-cgm-summary-table.png)
-
-**Figure C — Code selection**
-
-![Figure C — Code selection](docs/manual_images/04-code-selection.png)
-
-**Figure D — Primary Hierarchy, components, rule taxonomy**
-
-![Figure D — Primary Hierarchy and components](docs/manual_images/05-primary-confidence.png)
-
-**Figure E — Confidence, notes, and Save**
-
-![Figure E — Confidence, notes, and Save](docs/manual_images/06-save-buttons.png)
-
-**Figure F — Participant Context and demographics**
-
-![Figure F — Participant Context and demographics](docs/manual_images/07-participant-context.png)
-
-**Figure G — Alert Phase Comparison chart**
-
-![Figure G — Alert Phase Comparison chart](docs/manual_images/08-alert-phase-comparison.png)
-
 ---
 
 ## 1. What This Platform Does
@@ -152,7 +124,7 @@ This platform supports structured coding of **post-interview Q/A** from G2 study
 
 ### 2.3 One Subject at a Time
 
-The sidebar **Subject** dropdown selects one participant at a time. All **30** subjects have CGM / demographics computed; **29** have Q/A line items (**DEMO01** has CGM only, no interview Q/A).
+The sidebar **Subject** dropdown selects one participant at a time. In a full private deployment, all subjects with CGM / demographics appear; subjects without Q/A line items are omitted from the Annotate dropdown. The public demo includes three synthetic subjects (`DEMO01`–`DEMO03`) with both Q/A and CGM stubs.
 
 ### 2.4 Conservative Coding and Traceability
 

@@ -7,6 +7,8 @@ authors:
     given-names: Huang-Cheng
 repository-code: "https://github.com/ag027592/cgm-contingency-scoring"
 license: MIT
+version: "1.0.0"
+date-released: "2026-07-27"
 keywords:
   - continuous-glucose-monitoring
   - annotation

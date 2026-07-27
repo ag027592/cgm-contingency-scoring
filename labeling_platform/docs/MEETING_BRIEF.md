@@ -4,6 +4,10 @@
 **Prepared for:** PI / faculty and coding team review
 **Topic:** Annotator training, the "Test Drive" gate, and Prolific-style attention checks
 
+> **Public-repo note:** Counts below (e.g. 29 subjects / 58 check samples) describe the
+> full private IRB deployment. The GitHub demo ships three synthetic subjects so the
+> same QC design can be reviewed without PHI.
+
 ---
 
 ## 1. Purpose of this meeting
