@@ -5,6 +5,7 @@ import hashlib
 import hmac
 import html as html_module
 import json
+import os
 import re
 import secrets
 import threading
@@ -119,6 +120,27 @@ GLUCOSE_RAW_PATH = GLUCOSE_DIR / "G2_Raw_cgm.csv"
 GLUCOSE_COMPUTED_PATH = GLUCOSE_DIR / "G2_computed_cgm.csv"
 GLUCOSE_DEMOGRAPHICS_PATH = GLUCOSE_DIR / "G2_demographics.csv"
 GLUCOSE_VALUE_COL = "Glucose.Value..mg.dL."
+
+
+def detect_public_demo_mode() -> bool:
+    """Use session-only writes when the bundled dataset contains DEMO subjects."""
+    override = os.environ.get("CGM_PUBLIC_DEMO", "").strip().lower()
+    if override in {"1", "true", "yes", "on"}:
+        return True
+    if override in {"0", "false", "no", "off"}:
+        return False
+    try:
+        subject_ids = {
+            str(json.loads(line).get("subject_id", "")).strip()
+            for line in LINE_ITEMS_PATH.read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        }
+    except (OSError, json.JSONDecodeError):
+        return False
+    return bool(subject_ids) and all(subject_id.startswith("DEMO") for subject_id in subject_ids)
+
+
+PUBLIC_DEMO_MODE = detect_public_demo_mode()
 
 DEMOGRAPHICS_FIELDS: List[tuple] = [
     ("sex_atbirth", "Sex at Birth"),
@@ -1291,6 +1313,8 @@ def load_users() -> Dict[str, dict]:
 
 
 def save_users(users: Dict[str, dict]) -> None:
+    if PUBLIC_DEMO_MODE:
+        return
     with USER_FILE_LOCK:
         tmp_path = USERS_PATH.with_suffix(".json.tmp")
         tmp_path.write_text(json.dumps(users, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -1313,6 +1337,8 @@ def verify_password(password: str, hashed: str) -> bool:
 
 
 def register_user(username: str, password: str, display_name: str) -> Optional[str]:
+    if PUBLIC_DEMO_MODE:
+        return "Account registration is disabled in the public synthetic demo."
     username = username.strip().lower()
     if not username or len(username) < 3:
         return "Username must be at least 3 characters."
@@ -1545,6 +1571,11 @@ def init_auth_state() -> None:
 
 
 def mark_training_completed(username: str) -> None:
+    if PUBLIC_DEMO_MODE:
+        if st.session_state.get("user"):
+            st.session_state.user["training_completed"] = True
+            st.session_state.user["training_completed_at_utc"] = utc_now_iso_z()
+        return
     with USER_FILE_LOCK:
         users = load_users()
         if username in users:
@@ -1561,6 +1592,13 @@ def simple_training_is_complete(user: dict) -> bool:
 
 
 def mark_simple_training_completed(username: str) -> None:
+    if PUBLIC_DEMO_MODE:
+        if st.session_state.get("user"):
+            ts = utc_now_iso_z()
+            st.session_state.user["simple_training_completed"] = True
+            st.session_state.user["simple_training_completed_at_utc"] = ts
+            st.session_state.user["simple_training_version"] = SIMPLE_TRAINING_VERSION
+        return
     with USER_FILE_LOCK:
         users = load_users()
         if username in users:
@@ -1572,6 +1610,8 @@ def mark_simple_training_completed(username: str) -> None:
 
 
 def reload_user_into_session() -> None:
+    if PUBLIC_DEMO_MODE:
+        return
     persist_user_session()
 
 
@@ -1717,6 +1757,8 @@ def compare_annotation_to_check_sample(annotation: dict, check_sample: dict) -> 
 def ensure_annotations_file() -> None:
     if ANNOTATIONS_PATH.exists():
         return
+    if PUBLIC_DEMO_MODE:
+        return
     with ANNOTATIONS_PATH.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=ANNOTATION_COLUMNS)
         writer.writeheader()
@@ -1775,8 +1817,13 @@ def normalize_annotation_row(row: dict) -> dict:
 
 
 def load_annotations() -> pd.DataFrame:
+    if PUBLIC_DEMO_MODE and "_public_demo_annotations" in st.session_state:
+        return st.session_state["_public_demo_annotations"].copy()
     ensure_annotations_file()
-    df = pd.read_csv(ANNOTATIONS_PATH, encoding="utf-8-sig", dtype=str, keep_default_na=False)
+    if ANNOTATIONS_PATH.exists():
+        df = pd.read_csv(ANNOTATIONS_PATH, encoding="utf-8-sig", dtype=str, keep_default_na=False)
+    else:
+        df = pd.DataFrame(columns=ANNOTATION_COLUMNS)
     for col in ANNOTATION_COLUMNS:
         if col not in df.columns:
             df[col] = ""
@@ -2399,9 +2446,12 @@ def save_annotation(
             df = df[~same_coder_item]
         df = pd.concat([df, pd.DataFrame([row])], ignore_index=True)
         df = df.reindex(columns=ANNOTATION_COLUMNS, fill_value="")
-        tmp_path = ANNOTATIONS_PATH.with_suffix(".csv.tmp")
-        df.to_csv(tmp_path, index=False, encoding="utf-8-sig")
-        tmp_path.replace(ANNOTATIONS_PATH)
+        if PUBLIC_DEMO_MODE:
+            st.session_state["_public_demo_annotations"] = df.copy()
+        else:
+            tmp_path = ANNOTATIONS_PATH.with_suffix(".csv.tmp")
+            df.to_csv(tmp_path, index=False, encoding="utf-8-sig")
+            tmp_path.replace(ANNOTATIONS_PATH)
 
 
 def audit_annotation_records(qa_items: List[dict]) -> dict:
@@ -4772,10 +4822,22 @@ def page_introduction(user: Optional[dict] = None) -> None:
 def page_login() -> None:
     st.title(PLATFORM_DISPLAY_NAME)
     st.caption(PLATFORM_LOGIN_CAPTION)
+    if PUBLIC_DEMO_MODE:
+        st.success(
+            "Public portfolio demo · synthetic DEMO01–DEMO03 data only. "
+            "Annotations are isolated to your browser session and are never written to the repository."
+        )
     st.info(TASK_SHORT_INTRO)
-    tab_login, tab_register = st.tabs(["Sign In", "Register"])
+    tab_login, tab_register = st.tabs(
+        ["Sign In", "Demo Access" if PUBLIC_DEMO_MODE else "Register"]
+    )
 
     with tab_login:
+        if PUBLIC_DEMO_MODE:
+            st.markdown(
+                "**Coder:** `demo` / `demo1234`  \n"
+                "**Admin dashboard:** `admin` / `admin1234`"
+            )
         with st.form("login_form"):
             u = st.text_input("Username")
             p = st.text_input("Password", type="password")
@@ -4796,6 +4858,17 @@ def page_login() -> None:
                 st.rerun()
 
     with tab_register:
+        if PUBLIC_DEMO_MODE:
+            st.markdown("#### Public demo access")
+            st.write(
+                "Registration is disabled so public visitors cannot create shared accounts. "
+                "Use one of the synthetic demo accounts shown on the Sign In tab."
+            )
+            st.info(
+                "All saves are session-only. Refreshing or opening a new browser session "
+                "restores the clean bundled demo."
+            )
+            return
         st.markdown("#### What is this task?")
         st.markdown(
             "Before you score anything, it helps to know **what participants went through** in the G2 study:"
@@ -7389,6 +7462,8 @@ def main() -> None:
 
     user = st.session_state.user
     st.sidebar.markdown("---")
+    if PUBLIC_DEMO_MODE:
+        st.sidebar.success("PUBLIC DEMO · synthetic data · session-only saves")
     st.sidebar.markdown(f"**Signed in as:** {user.get('display_name', user['username'])}")
     st.sidebar.caption(
         "Your session is remembered on this device (refresh-safe for about 30 days when "
