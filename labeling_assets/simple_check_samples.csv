@@ -1,0 +1,10 @@
+subject_id,qa_id,expected_primary,expected_context,expected_behavior,expected_consequence,expected_rule,expected_rule_source,expected_behavior_form,rationale,attention_check
+DEMO01,DEMO01_Q001_A002,0,0,0,0,0,N/A,N/A,Synthetic clear no-contingency answer.,1
+DEMO01,DEMO01_Q005_A006,2,1,1,1,0,N/A,N/A,Synthetic answer links rice dinner to glucose rise.,0
+DEMO01,DEMO01_Q009_A010,4,1,1,1,1,Self-generated,Stated intention (planning to do it),Synthetic self-generated future-oriented rule.,0
+DEMO02,DEMO02_Q001_A002,0,0,0,0,0,N/A,N/A,Synthetic clear no-contingency answer.,1
+DEMO02,DEMO02_Q005_A006,2,1,1,1,0,N/A,N/A,Synthetic answer links rice dinner to glucose rise.,0
+DEMO02,DEMO02_Q009_A010,4,1,1,1,1,Self-generated,Stated intention (planning to do it),Synthetic self-generated future-oriented rule.,0
+DEMO03,DEMO03_Q001_A002,0,0,0,0,0,N/A,N/A,Synthetic clear no-contingency answer.,1
+DEMO03,DEMO03_Q005_A006,2,1,1,1,0,N/A,N/A,Synthetic answer links rice dinner to glucose rise.,0
+DEMO03,DEMO03_Q009_A010,4,1,1,1,1,Self-generated,Stated intention (planning to do it),Synthetic self-generated future-oriented rule.,0

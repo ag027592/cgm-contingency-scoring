@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 980" font-family="Arial, Helvetica, sans-serif">
+  <rect width="900" height="980" fill="#f8fafc"/>
+  <text x="40" y="42" font-size="22" font-weight="700" fill="#0f172a">Annotation Workflow - Recommended Order</text>
+  <text x="40" y="66" font-size="13" fill="#64748b">Follow these steps for each Q/A item. Language coding comes first; CGM is supporting evidence.</text>
+
+  <g font-size="13">
+    <rect x="40" y="90" width="820" height="72" rx="10" fill="#eff6ff" stroke="#93c5fd"/>
+    <circle cx="68" cy="126" r="16" fill="#2563eb"/><text x="68" y="131" text-anchor="middle" fill="#fff" font-weight="700">1</text>
+    <text x="96" y="118" font-weight="700" fill="#1e3a8a">Read Q/A (English + Spanish)</text>
+    <text x="96" y="138" fill="#475569">Use keyword highlights as reading aids only. They do not auto-assign codes.</text>
+
+    <rect x="40" y="178" width="820" height="72" rx="10" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <circle cx="68" cy="214" r="16" fill="#059669"/><text x="68" y="219" text-anchor="middle" fill="#fff" font-weight="700">2</text>
+    <text x="96" y="206" font-weight="700" fill="#065f46">Check CGM Summary (if visible yet)</text>
+    <text x="96" y="226" fill="#475569">Early table appears below Q/A when keywords match. Code-only items show CGM after Step 6.</text>
+
+    <rect x="40" y="266" width="820" height="72" rx="10" fill="#f5f3ff" stroke="#c4b5fd"/>
+    <circle cx="68" cy="302" r="16" fill="#7c3aed"/><text x="68" y="307" text-anchor="middle" fill="#fff" font-weight="700">3</text>
+    <text x="96" y="294" font-weight="700" fill="#5b21b6">Select Code(s)</text>
+    <text x="96" y="314" fill="#475569">Group -&gt; Subgroup -&gt; Code (max 3). Use Other + reason if nothing fits.</text>
+
+    <rect x="40" y="354" width="820" height="72" rx="10" fill="#fdf2f8" stroke="#f9a8d4"/>
+    <circle cx="68" cy="390" r="16" fill="#db2777"/><text x="68" y="395" text-anchor="middle" fill="#fff" font-weight="700">4</text>
+    <text x="96" y="382" font-weight="700" fill="#9d174d">Assign Primary Hierarchy (0-4)</text>
+    <text x="96" y="402" fill="#475569">Score language maturity / contingency structure, not clinical outcome.</text>
+
+    <rect x="40" y="442" width="820" height="72" rx="10" fill="#fff7ed" stroke="#fdba74"/>
+    <circle cx="68" cy="478" r="16" fill="#ea580c"/><text x="68" y="483" text-anchor="middle" fill="#fff" font-weight="700">5</text>
+    <text x="96" y="470" font-weight="700" fill="#9a3412">Mark Secondary Components + Rule Taxonomy</text>
+    <text x="96" y="490" fill="#475569">Context | Behavior | Consequence | Rule. Rule Source / Behavior Form when applicable.</text>
+
+    <rect x="40" y="530" width="820" height="72" rx="10" fill="#ecfeff" stroke="#67e8f9"/>
+    <circle cx="68" cy="566" r="16" fill="#0891b2"/><text x="68" y="571" text-anchor="middle" fill="#fff" font-weight="700">6</text>
+    <text x="96" y="558" font-weight="700" fill="#155e75">Set Confidence + Coder Note</text>
+    <text x="96" y="578" fill="#475569">Use 1-2 when uncertain (adjudication). Add notes for ambiguity or narrative-CGM mismatch.</text>
+
+    <rect x="40" y="618" width="820" height="72" rx="10" fill="#fef2f2" stroke="#fca5a5"/>
+    <circle cx="68" cy="654" r="16" fill="#dc2626"/><text x="68" y="659" text-anchor="middle" fill="#fff" font-weight="700">7</text>
+    <text x="96" y="646" font-weight="700" fill="#991b1b">Save or Save and Next</text>
+    <text x="96" y="666" fill="#475569">At least one code or Other required. Records write to annotations_qa.csv.</text>
+
+    <rect x="40" y="706" width="820" height="72" rx="10" fill="#f1f5f9" stroke="#94a3b8"/>
+    <circle cx="68" cy="742" r="16" fill="#475569"/><text x="68" y="747" text-anchor="middle" fill="#fff" font-weight="700">8</text>
+    <text x="96" y="734" font-weight="700" fill="#334155">Use Participant Context as needed</text>
+    <text x="96" y="754" fill="#475569">Daily phase charts, all 12 metrics, raw trace - same for all items on this subject.</text>
+  </g>
+
+  <rect x="40" y="800" width="820" height="150" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="60" y="830" font-size="14" font-weight="700" fill="#0f172a">Design reminder</text>
+  <text x="60" y="858" font-size="12" fill="#475569">- Primary = language structure, not glucose quality.</text>
+  <text x="60" y="880" font-size="12" fill="#475569">- CGM mismatch = write a note and consider lower confidence. Do not auto-lower Primary.</text>
+  <text x="60" y="902" font-size="12" fill="#475569">- Phase 2 last 3d may show emerging change before full Phase 2 average moves.</text>
+  <text x="60" y="924" font-size="12" fill="#475569">- Interview timing may not align day-by-day with CGM wear period.</text>
+</svg>

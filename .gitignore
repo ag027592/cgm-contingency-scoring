@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.log
+.idea/
+.vscode/
+labeling_assets/.session_secret
+labeling_assets/users.json.bak
+# Never commit real study exports
+**/G1_*.csv
+**/G2_Raw_cgm.csv.bak
+**/*transcript*
+**/raw_videoes/

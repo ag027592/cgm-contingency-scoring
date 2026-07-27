@@ -1,0 +1,84 @@
+{
+  "version": "demo_synthetic_v1",
+  "total_items": 36,
+  "subjects": 3,
+  "note": "Synthetic demo utterances only. No study transcripts.",
+  "items": [
+    {
+      "item_id": "DEMO01_L001",
+      "subject_id": "DEMO01",
+      "line_no": 1,
+      "speaker_role": "interviewer",
+      "speaker_label_en": "Interviewer",
+      "speaker_label_es": "Entrevistador",
+      "text_en": "Anything you did not like about the videos?",
+      "text_es": "¿Hubo algo que no te gustó de los videos?",
+      "annotation": {
+        "selected_path": {
+          "code_group": null,
+          "subgroup": null,
+          "code_id": null
+        },
+        "confidence": null,
+        "notes": null
+      }
+    },
+    {
+      "item_id": "DEMO01_L002",
+      "subject_id": "DEMO01",
+      "line_no": 2,
+      "speaker_role": "subject",
+      "speaker_label_en": "DEMO01",
+      "speaker_label_es": "DEMO01",
+      "text_en": "No. Everything was good.",
+      "text_es": "No. Todo estuvo bien.",
+      "annotation": {
+        "selected_path": {
+          "code_group": null,
+          "subgroup": null,
+          "code_id": null
+        },
+        "confidence": null,
+        "notes": null
+      }
+    },
+    {
+      "item_id": "DEMO01_L003",
+      "subject_id": "DEMO01",
+      "line_no": 3,
+      "speaker_role": "interviewer",
+      "speaker_label_en": "Interviewer",
+      "speaker_label_es": "Entrevistador",
+      "text_en": "How would you interpret what you saw?",
+      "text_es": "¿Cómo interpretarías lo que viste?",
+      "annotation": {
+        "selected_path": {
+          "code_group": null,
+          "subgroup": null,
+          "code_id": null
+        },
+        "confidence": null,
+        "notes": null
+      }
+    },
+    {
+      "item_id": "DEMO01_L004",
+      "subject_id": "DEMO01",
+      "line_no": 4,
+      "speaker_role": "subject",
+      "speaker_label_en": "DEMO01",
+      "speaker_label_es": "DEMO01",
+      "text_en": "My glucose went up after lunch, but I don't know what caused it.",
+      "text_es": "Mi glucosa subió después del almuerzo, pero no sé qué lo causó.",
+      "annotation": {
+        "selected_path": {
+          "code_group": null,
+          "subgroup": null,
+          "code_id": null
+        },
+        "confidence": null,
+        "notes": null
+      }
+    }
+  ]
+}

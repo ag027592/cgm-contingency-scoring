@@ -1,0 +1,4 @@
+Unnamed: 0,subject_id,sex_atbirth,race,ethnicity_screen,education,current_employment,bmi,bmi_cat,a1c,a1c_cat,fasting_glucose
+0,DEMO01,Female,Demo,Demo,Demo,Demo,24.0,Normal,5.6,Normal,95
+1,DEMO02,Male,Demo,Demo,Demo,Demo,27.0,Overweight,6.1,Prediabetes,110
+2,DEMO03,Female,Demo,Demo,Demo,Demo,22.0,Normal,5.4,Normal,90

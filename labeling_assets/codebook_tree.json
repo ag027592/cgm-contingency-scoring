@@ -1,0 +1,475 @@
+{
+  "version": "G2 Study Codebook 3.0",
+  "decision_levels": [
+    "code_group",
+    "subgroup",
+    "code"
+  ],
+  "groups": [
+    {
+      "code_group": "App Interpretation & Preference",
+      "subgroups": [
+        {
+          "subgroup": "Technical Evaluation",
+          "codes": [
+            {
+              "code_id": "app_interpretation_preference.technical_evaluation.graph_interpretation_language",
+              "code_name": "Graph Interpretation Language",
+              "type": "Deductive",
+              "definition": "Participants interpretation of their graphs to specific behavior.",
+              "additional_note": "I changed this code to reflect how participants think whether it is easy or not to use the app in practice ways, as for the evaluation part, we will just use the experience valce-analytic tag.",
+              "example_quotes": [
+                "The first time it went up so high was because I ate a gordita, because it was big. I said, this is what's making my sugar go up.",
+                "I could see where it went up, where it went down, it was at a medium level, and it gave me options for one hour, three hours, six hours.",
+                "I would interpret them as like different readings. So it would be at like the base level and then, um, it would like increase depending on what I ate."
+              ]
+            }
+          ]
+        },
+        {
+          "subgroup": "Usage Feedback",
+          "codes": [
+            {
+              "code_id": "app_interpretation_preference.usage_feedback.graph_leading_to_behavior_action",
+              "code_name": "Graph Leading to Behavior Action",
+              "type": "Inductive",
+              "definition": "How participants used graph feedback to guide/change behavior.",
+              "additional_note": "",
+              "example_quotes": [
+                "So now I'm going to make the portion smaller or less. Then I realized for myself that I need to make a change for me.",
+                "Then I tell myself, no, I already ate this. I'm not going to eat it because otherwise, my levels will spike.",
+                "a lot of change because I used to eat and then just sit, but I would check the app and see that my sugar levels were almost about to spike."
+              ]
+            }
+          ]
+        },
+        {
+          "subgroup": "User-Decision Making",
+          "codes": [
+            {
+              "code_id": "app_interpretation_preference.user_decision_making.settings_customization_participant_agency",
+              "code_name": "Settings & Customization (Participant Agency)",
+              "type": "Inductive",
+              "definition": "Participant makes personal decisions about app or device settings—such as time window displays or alerts—that reflect intentional use and self-guided adaptation.",
+              "additional_note": "",
+              "example_quotes": [
+                "I set it to 24 hours. To see how it changes over 24 hours"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code_group": "Continuation Intent",
+      "subgroups": [
+        {
+          "subgroup": "Sentiment Response",
+          "codes": [
+            {
+              "code_id": "continuation_intent.sentiment_response.recommendation_sentiment",
+              "code_name": "Recommendation Sentiment",
+              "type": "Deductive",
+              "definition": "Whether participants are willing to recommend it to others or not.",
+              "additional_note": "",
+              "example_quotes": [
+                "I definitely think everyone should have this experience because it will make us realize that our health is seriously at risk due to sugar.",
+                "recommend it because it made me aware",
+                "Yes, yes. I would recommend it. Because it made me think about my health."
+              ]
+            }
+          ]
+        },
+        {
+          "subgroup": "Technical Evaluation",
+          "codes": [
+            {
+              "code_id": "continuation_intent.technical_evaluation.suggested_improvements",
+              "code_name": "Suggested Improvements",
+              "type": "Inductive",
+              "definition": "Any suggestions the participant gives for improving the device, app, or videos.",
+              "additional_note": "",
+              "example_quotes": [
+                "maybe smaller bandages or bandages that are not too rough on your skin",
+                "I will continue to probably wear one if they were smaller and they were put in a different area of your body where it's not so noticeable and, bandages are not so big."
+              ]
+            }
+          ]
+        },
+        {
+          "subgroup": "Usage Feedback",
+          "codes": [
+            {
+              "code_id": "continuation_intent.usage_feedback.device_recommendation_rationale",
+              "code_name": "Device recommendation Rationale",
+              "type": "Deductive",
+              "definition": "The reason participant gives for recommending or not recommending.",
+              "additional_note": "",
+              "example_quotes": [
+                "I definitely think everyone should have this experience because it will make us realize that our health is seriously at risk due to sugar.",
+                "I would recommend it to others so they can also see what they're eating and what they're doing with their bodies.",
+                "just so that we can learn a lot more about your body and like also know about the, about your glucose and the health videos too."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code_group": "Device Understanding & Usage",
+      "subgroups": [
+        {
+          "subgroup": "Device Disruption & Reponsiveness",
+          "codes": [
+            {
+              "code_id": "device_understanding_usage.device_disruption_reponsiveness.alert_based_reflection",
+              "code_name": "Alert-Based Reflection",
+              "type": "Inductive",
+              "definition": "Mentions of device interference framed positively, as a reminder or beneficial prompt for awareness or behavior change.",
+              "additional_note": "",
+              "example_quotes": [
+                "when I didn't take care of my diet, [00:01:00] the beeping sound would go off. That's it.",
+                "it would also beep at night, even while I was sleeping, the glucose alarm would go off. So it made me wonder why at night, when I hadn't eaten anything",
+                "when I ate and consumed a lot of carbohydrates, the alert alarm would go off indicating that my glucose levels had risen."
+              ]
+            },
+            {
+              "code_id": "device_understanding_usage.device_disruption_reponsiveness.unwanted_interference",
+              "code_name": "Unwanted Interference",
+              "type": "Deductive",
+              "definition": "Describes instances where the device disrupted the participant’s routine or caused discomfort.",
+              "additional_note": "",
+              "example_quotes": [
+                "nothing more, my wife just said it woke her up at night."
+              ]
+            }
+          ]
+        },
+        {
+          "subgroup": "Device Use Insight",
+          "codes": [
+            {
+              "code_id": "device_understanding_usage.device_use_insight.check_ins_after_meals",
+              "code_name": "Check-ins After Meals",
+              "type": "Deductive",
+              "definition": "When participants describe checking glucose after meals, often to observe how specific foods affected their readings.",
+              "additional_note": "",
+              "example_quotes": [
+                "I had already eaten something and then check my glucose levels to see how much they would rise.",
+                "a lot of change because I used to eat and then just sit, but I would check the app and see that my sugar levels were almost about to spike.",
+                "After eating."
+              ]
+            },
+            {
+              "code_id": "device_understanding_usage.device_use_insight.check_ins_before_meals",
+              "code_name": "Check-ins Before Meals",
+              "type": "Deductive",
+              "definition": "When participants describe checking their glucose readings before eating, typically as part of a routine or preparation.",
+              "additional_note": "",
+              "example_quotes": [
+                "for the app, um, I would look at it kind of like before eating and then like after I ate too.",
+                "I would check it when I woke up, before eating, after eating, throughout the day"
+              ]
+            },
+            {
+              "code_id": "device_understanding_usage.device_use_insight.dexcom_cgm_device_clarity_app_usage",
+              "code_name": "Dexcom CGM Device/Clarity App Usage",
+              "type": "Deductive",
+              "definition": "How participants are engaging with the sensor and sensor app in their day-to-day routines.",
+              "additional_note": "",
+              "example_quotes": [
+                "I set it to 24 hours. To see how it changes over 24 hours",
+                "To see how the phone had like a little graph, like the kind you see when monitoring a heart",
+                "I liked was that it kept me alert. And I was always checking my phone whenever the alarm went off."
+              ]
+            },
+            {
+              "code_id": "device_understanding_usage.device_use_insight.high_frequency_check_ins",
+              "code_name": "High Frequency Check-ins",
+              "type": "Deductive",
+              "definition": "Apply when participants mention frequent or repeated check-ins throughout the day, typically as part of a routine.",
+              "additional_note": "",
+              "example_quotes": [
+                "I would check it like 10 to 12 times a day because I wanted to know how my glucose levels were",
+                "At all times, suddenly, when I remembered [00:03:00] I had the monitor, I wanted to know, so I checked it.",
+                "every moment or when I shared the information with others."
+              ]
+            },
+            {
+              "code_id": "device_understanding_usage.device_use_insight.increased_use_over_time",
+              "code_name": "Increased Use Over Time",
+              "type": "Deductive",
+              "definition": "When participants describe growing frequency of check-ins as their curiosity, motivation, or awareness increases over the participated period.",
+              "additional_note": "",
+              "example_quotes": [
+                "at first, not so [00:02:00] often, but later very frequently."
+              ]
+            },
+            {
+              "code_id": "device_understanding_usage.device_use_insight.random_low_frequency_check_ins",
+              "code_name": "Random/Low Frequency Check-ins",
+              "type": "Deductive",
+              "definition": "When participants mention only checking occasionally, sporadically, or without building it into a routine.",
+              "additional_note": "",
+              "example_quotes": [
+                "Not really that much. I only basically paid attention to, every time I went off."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code_group": "Experience Valence",
+      "subgroups": [
+        {
+          "subgroup": "Sentiment Response",
+          "codes": [
+            {
+              "code_id": "experience_valence.sentiment_response.ambivalent_sentiment",
+              "code_name": "Ambivalent Sentiment",
+              "type": "Inductive",
+              "definition": "Participant expresses mixed or conditional feelings—both positive and negative—about a feature or experience.",
+              "additional_note": "",
+              "example_quotes": [
+                "I wouldn't say I liked it. I wouldn't say I didn't like it either",
+                "Like just having it there. Like even if it was comfortable, it was just kind of like in the way. So, yeah.",
+                "the monitor felt a bit cumbersome"
+              ]
+            },
+            {
+              "code_id": "experience_valence.sentiment_response.negative_sentiment",
+              "code_name": "Negative Sentiment",
+              "type": "Inductive",
+              "definition": "Participant expresses dissatisfaction, frustration, or discomfort regarding any part of the experience.",
+              "additional_note": "",
+              "example_quotes": [
+                "It was like I was holding my breath, and that's when it would happen because I would wake up agitated, but this has always happened to me, waking up very agitated."
+              ]
+            },
+            {
+              "code_id": "experience_valence.sentiment_response.positive_sentiment",
+              "code_name": "Positive Sentiment",
+              "type": "Inductive",
+              "definition": "Participant expresses positive emotional tone or satisfaction related to any aspect of the device, app, or video.",
+              "additional_note": "(When the interviewee specifically mentions a positive emotions, not a extended context when us the coder think the interviewee is expressing a good emotions)",
+              "example_quotes": [
+                "as something extraordinary for me",
+                "I love it.",
+                "I think nothing, it's very good"
+              ]
+            }
+          ]
+        },
+        {
+          "subgroup": "Technical Evaluation",
+          "codes": [
+            {
+              "code_id": "experience_valence.technical_evaluation.challenging_to_use",
+              "code_name": "Challenging to Use",
+              "type": "Mixed",
+              "definition": "Participant expresses that a feature was confusing, hard to use, or not accessible.",
+              "additional_note": "",
+              "example_quotes": [
+                "Like just having it there. Like even if it was comfortable, it was just kind of like in the way. So, yeah.",
+                "The bandaids would start getting itchy and it will peel off some of your skin if you try to, you get itchy with it, and when you scratch it by accident, it peels [00:01:00] off your skins."
+              ]
+            },
+            {
+              "code_id": "experience_valence.technical_evaluation.easy_to_use",
+              "code_name": "Easy to Use",
+              "type": "Mixed",
+              "definition": "Participant indicates that a feature, setup, or interface was intuitive or comfortable.",
+              "additional_note": "",
+              "example_quotes": [
+                "it was, uh, comfortable, so I didn't hurt my arm and it was easy to use as well.",
+                "something really positive, because it tells you your sugar levels, it alerts you, it warns you to be careful and that you're going overboard.",
+                "Yes, they are easy."
+              ]
+            },
+            {
+              "code_id": "experience_valence.technical_evaluation.non_function",
+              "code_name": "Non-Function",
+              "type": "Mixed",
+              "definition": "Participant describes the device as disruptive to daily life, physically or socially.",
+              "additional_note": "",
+              "example_quotes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code_group": "Experience Valence - Analytic Tag",
+      "subgroups": [
+        {
+          "subgroup": "Interpretive Flag",
+          "codes": [
+            {
+              "code_id": "experience_valence_analytic_tag.interpretive_flag.emotional_response_insight_tag",
+              "code_name": "Emotional Response/Insight (Tag)",
+              "type": "Inductive",
+              "definition": "Use this tag when a participant’s statement suggests an emotional reaction, reflection, or internal response—even if they don’t explicitly label it as an emotion. This tag is not used to classify tone (positive/negative)—that's the role of the Experience Valence codes—but to signal that something emotionally meaningful is happening in the participant's interpretation, tone, or phrasing.",
+              "additional_note": "The purpose of this tag is to flag emotionally rich passages for further analysis, particularly those that may reveal:\n1. What triggers emotional engagement (e.g., a shared story, an alert, a graph spike)\n2. How participants internalize or personalize the experience\n3. Unspoken tensions, motivations, or affective shifts\nDo not apply if the participant is only giving factual or descriptive feedback with no reflective tone or implied emotion",
+              "example_quotes": [
+                "It's like when we're hospitalized and they have the heart monitor screen. I would interpret that as my life being reflected there.",
+                "having the sensor here on my [00:04:00] arm made me feel very secure",
+                "describe it as something, um, like a new experience"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code_group": "Health Video Engagement",
+      "subgroups": [
+        {
+          "subgroup": "Sentiment Response",
+          "codes": [
+            {
+              "code_id": "health_video_engagement.sentiment_response.video_shared_experience_recognition",
+              "code_name": "Video Shared Experience - Recognition",
+              "type": "Inductive",
+              "definition": "Participant describes seeing others with similar conditions, feeling seen, or identifying with peers.",
+              "additional_note": "",
+              "example_quotes": [
+                "other colleagues, uh, shared their experiences of how they felt. So that made me feel more confident",
+                "I liked that it was on a daily basis and I liked that it was by like other users too.",
+                "I like that people mentioned the same thing that I was experiencing."
+              ]
+            }
+          ]
+        },
+        {
+          "subgroup": "Usage Feedback",
+          "codes": [
+            {
+              "code_id": "health_video_engagement.usage_feedback.video_helpfulness_evaluation",
+              "code_name": "Video Helpfulness Evaluation",
+              "type": "Deductive",
+              "definition": "Participants' evaluations of health videos as either helpful or non-helpful in supporting their understanding or usage.",
+              "additional_note": "I changed this code from one side (being helpful) to evaluations (neutral). \nAlthough the three sample interviews all state the video being helpful, but we need to consider the chance that someone doesn't think the same.",
+              "example_quotes": [
+                "Oh, I really loved the videos. I loved them because I could also read and see that even when it's cold or hot or you're active, your glucose can rise. So, for me, they were very, very important.",
+                "They gave me an idea [00:02:00] that there are different aspects one needs to identify. For example, I remember one about whether the weather interfered, and I was like: wow! I hadn't analyzed that before.",
+                "I think they are fine because they provide us with information"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code_group": "Learning Outcome",
+      "subgroups": [
+        {
+          "subgroup": "Health Awareness",
+          "codes": [
+            {
+              "code_id": "learning_outcome.health_awareness.dietary_awareness",
+              "code_name": "Dietary Awareness",
+              "type": "Inductive",
+              "definition": "Participant mentions becoming more aware of their health, related diet habits, or related behaviors through the device.",
+              "additional_note": "",
+              "example_quotes": [
+                "especially when I ate tortillas? I realized",
+                "it's not about what I ate, but how much I ate.",
+                "as a person I need to be more aware, that as a person, I need to watch what I eat because I am what I eat, so if I want to be well, I need to take care."
+              ]
+            },
+            {
+              "code_id": "learning_outcome.health_awareness.exercise_awareness",
+              "code_name": "Exercise Awareness",
+              "type": "Inductive",
+              "definition": "A personally developed realization or understanding that results in a change to the participant’s own day-to-day outine, or mindset.",
+              "additional_note": "",
+              "example_quotes": [
+                "Exercising , it keeps your sugar levels low.",
+                "I think that when I stayed more active, the alarm went off less.",
+                "because I don't want my glucose levels to go up and I felt that if I even walk and continue with the diet, I'm starting to do with that, I would lose more weight."
+              ]
+            }
+          ]
+        },
+        {
+          "subgroup": "Insight Leading to Personal Lifestyle Change",
+          "codes": [
+            {
+              "code_id": "learning_outcome.insight_leading_to_personal_lifestyle_change.dietary_adjustment",
+              "code_name": "Dietary Adjustment",
+              "type": "Inductive",
+              "definition": "Changes in food intake or portion control as a result of device feedback.",
+              "additional_note": "",
+              "example_quotes": [
+                "I drank more water and watched the portions I was eating, realizing I needed to eat smaller amounts instead of the large quantities I was consuming.",
+                "So now I'm going to make the portion smaller or less. Then I realized for myself that I need to make a change for me.",
+                "I changed [00:07:00] my foods and the timing. I tried to be, uh, a little more, not strict, but mindful of my meal times and what I was eating."
+              ]
+            },
+            {
+              "code_id": "learning_outcome.insight_leading_to_personal_lifestyle_change.exercise_adjustment",
+              "code_name": "Exercise Adjustment",
+              "type": "Inductive",
+              "definition": "Changes in physical activity based on glucose readings.",
+              "additional_note": "This includes any moment where participants reflect on how using the device helped them better understand their own health and adjust their lifestyle accordingly.",
+              "example_quotes": [
+                "I started doing that Japanese yoga exercise of moving my arms, and it worked for me.",
+                "Yes, I do have to walk longer than I was walking before.",
+                "Yes, I worked more."
+              ]
+            }
+          ]
+        },
+        {
+          "subgroup": "Other Insights or Changes",
+          "codes": [
+            {
+              "code_id": "learning_outcome.other_insights_or_changes.influence_on_others",
+              "code_name": "Influence on Others",
+              "type": "Inductive",
+              "definition": "A realization or takeaway that leads participants to influence or adjust the behaviors of people around them, such as family members, friends, or coworkers.",
+              "additional_note": "These reflections go beyond personal change to describe how the participant’s experience with the device prompted broader lifestyle awareness or adjustments in their social circle.",
+              "example_quotes": [
+                "I am making sure my children don't eat so much sugar anymore because letting them eat a lot of sugar in the long run can have consequences."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code_group": "Personal Context",
+      "subgroups": [
+        {
+          "subgroup": "Personal Lifestyle",
+          "codes": [
+            {
+              "code_id": "personal_context.personal_lifestyle.cultural_anchoring_habit_roots",
+              "code_name": "Cultural Anchoring & Habit Roots",
+              "type": "Deductive",
+              "definition": "Participant references food, exercise, or lifestyle choices tied to cultural upbringing, routines, or personal history that influence behavior change.",
+              "additional_note": "",
+              "example_quotes": [
+                "the amounts were that I used to eat up to six tortillas and now I'm eating four. It's not easy to give up tortillas because I. Since I was little, I've always eaten tortillas. Bread, I don't eat much. But it's easier for me to give up bread than tortillas.",
+                "Carb, um, foods like rice and, 'cause I eat a lot of rice and bread, so every time I would eat it, I would get alerts. Um, so yeah, I think that's what it was."
+              ]
+            },
+            {
+              "code_id": "personal_context.personal_lifestyle.lifestyle_app_use",
+              "code_name": "Lifestyle App Use",
+              "type": "Deductive",
+              "definition": "Mentions of other frequently used apps revealing participant lifestyle or preferences.",
+              "additional_note": "",
+              "example_quotes": [
+                "they are games [00:09:00] to work the mind, so to speak. Netflix and YouTube are the ones I use the most.",
+                "I like that it's a really wide, um, range of communities. So you have like different stuff and you can literally find anything on there.",
+                "I looked at Amazon a lot."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

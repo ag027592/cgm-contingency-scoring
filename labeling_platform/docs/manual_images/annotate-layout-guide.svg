@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="780" fill="#f8fafc"/>
+  <text x="24" y="36" font-size="22" font-weight="700" fill="#0f172a">Annotate Page - Layout Guide (scroll top to bottom)</text>
+  <text x="24" y="58" font-size="13" fill="#64748b">CGM appears in two places depending on trigger type (see User Manual Section 6).</text>
+
+  <rect x="24" y="80" width="220" height="660" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="40" y="108" font-size="14" font-weight="700" fill="#0f172a">[1] Sidebar</text>
+  <text x="40" y="132" font-size="11" fill="#475569">- Theme, navigation, sign out</text>
+  <text x="40" y="150" font-size="11" fill="#475569">- Subject + coverage caption</text>
+  <text x="40" y="168" font-size="11" fill="#475569">- Filters and highlights</text>
+  <text x="40" y="186" font-size="11" fill="#475569">- Data coverage table</text>
+  <text x="40" y="204" font-size="11" fill="#475569">- Saved status / adjudication</text>
+  <text x="40" y="222" font-size="11" fill="#475569">- Annotated / By you / Visible</text>
+
+  <rect x="260" y="80" width="916" height="660" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+
+  <rect x="280" y="96" width="876" height="48" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="296" y="126" font-size="13" font-weight="700" fill="#1d4ed8">[2] Progress and navigation (Total/Done = full subject; Visible = filtered)</text>
+
+  <rect x="280" y="152" width="428" height="72" rx="8" fill="#eff6ff" stroke="#60a5fa"/>
+  <rect x="728" y="152" width="428" height="72" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="296" y="178" font-size="13" font-weight="700" fill="#1d4ed8">[3] Question (EN/ES)</text>
+  <text x="744" y="178" font-size="13" font-weight="700" fill="#c2410c">[4] Answer (EN/ES)</text>
+
+  <rect x="280" y="232" width="876" height="56" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+  <text x="296" y="256" font-size="13" font-weight="700" fill="#047857">[5a] Early CGM Summary (optional)</text>
+  <text x="296" y="274" font-size="11" fill="#475569">Keywords in Q/A or Always show CGM - table below Q/A</text>
+
+  <rect x="280" y="296" width="876" height="52" rx="8" fill="#f5f3ff" stroke="#c4b5fd"/>
+  <text x="296" y="322" font-size="13" font-weight="700" fill="#6d28d9">[6] Codes + Other (Group -&gt; Subgroup -&gt; Code)</text>
+
+  <rect x="280" y="356" width="876" height="52" rx="8" fill="#f6f3ff" stroke="#8e6cff"/>
+  <text x="296" y="382" font-size="13" font-weight="700" fill="#5b21b6">[7] Primary 0-4 + Secondary Components + Rule Taxonomy</text>
+
+  <rect x="280" y="416" width="876" height="52" rx="8" fill="#f4f8ff" stroke="#4f8ff7"/>
+  <text x="296" y="442" font-size="13" font-weight="700" fill="#1d4ed8">[8] Confidence 1-5 + Coder Note</text>
+
+  <rect x="280" y="476" width="876" height="56" rx="8" fill="#ecfdf5" stroke="#10b981"/>
+  <text x="296" y="500" font-size="13" font-weight="700" fill="#047857">[5b] CGM Coding Notes (optional, late)</text>
+  <text x="296" y="518" font-size="11" fill="#475569">Codes / Primary / components trigger - hints and mismatch after confidence</text>
+
+  <rect x="280" y="542" width="428" height="44" rx="8" fill="#eefaf1" stroke="#35b46b"/>
+  <rect x="728" y="542" width="428" height="44" rx="8" fill="#eefaf1" stroke="#35b46b"/>
+  <text x="330" y="570" font-size="13" font-weight="700" fill="#166534">[9a] Save</text>
+  <text x="770" y="570" font-size="13" font-weight="700" fill="#166534">[9b] Save and Next</text>
+
+  <rect x="280" y="596" width="876" height="44" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="296" y="624" font-size="13" font-weight="700" fill="#334155">[10] Participant Context (fixed per subject)</text>
+
+  <path d="M134 300 L134 640" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="142" y="470" font-size="11" fill="#2563eb" transform="rotate(90 142 470)">Scroll down</text>
+</svg>

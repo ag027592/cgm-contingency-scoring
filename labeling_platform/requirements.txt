@@ -1,0 +1,8 @@
+streamlit
+pandas
+openpyxl
+bcrypt
+plotly
+extra-streamlit-components
+fpdf2
+pyarrow<22,>=7

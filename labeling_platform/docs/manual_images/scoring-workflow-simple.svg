@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 780" font-family="Arial, Helvetica, sans-serif">
+  <rect width="880" height="780" fill="#f8fafc"/>
+  <text x="24" y="32" font-size="18" font-weight="700" fill="#0f172a">Scoring workflow - follow in order</text>
+  <text x="24" y="52" font-size="12" fill="#64748b">One Answer at a time. Score the Answer only - the Question is context only.</text>
+
+  <!-- Step 1 -->
+  <rect x="24" y="68" width="832" height="52" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+  <circle cx="48" cy="94" r="14" fill="#2563eb"/>
+  <text x="48" y="99" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">1</text>
+  <text x="72" y="88" font-size="13" font-weight="700" fill="#1e3a8a">Finish Initial Training</text>
+  <text x="72" y="106" font-size="11" fill="#475569">Read examples and pass the short Test Drive first.</text>
+
+  <text x="440" y="128" text-anchor="middle" font-size="16" fill="#94a3b8">&#8595;</text>
+
+  <!-- Step 2-3 read -->
+  <rect x="24" y="136" width="832" height="52" rx="8" fill="#fff3e8" stroke="#fdba74"/>
+  <circle cx="48" cy="162" r="14" fill="#ea580c"/>
+  <text x="48" y="167" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">2</text>
+  <text x="72" y="156" font-size="13" font-weight="700" fill="#9a3412">Read the Answer carefully</text>
+  <text x="72" y="174" font-size="11" fill="#475569">This is the ONLY text you score.</text>
+
+  <rect x="24" y="196" width="832" height="52" rx="8" fill="#eef6ff" stroke="#4f8ff7"/>
+  <circle cx="48" cy="222" r="14" fill="#2563eb"/>
+  <text x="48" y="227" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">3</text>
+  <text x="72" y="216" font-size="13" font-weight="700" fill="#1d4ed8">Glance at the Question for Context</text>
+  <text x="72" y="234" font-size="11" fill="#475569">What was the person asked about? Do NOT score the Question.</text>
+
+  <text x="440" y="256" text-anchor="middle" font-size="16" fill="#94a3b8">&#8595;</text>
+
+  <!-- Step 4-6 score -->
+  <rect x="24" y="264" width="832" height="52" rx="8" fill="#f5f3ff" stroke="#c4b5fd"/>
+  <circle cx="48" cy="290" r="14" fill="#7c3aed"/>
+  <text x="48" y="295" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+  <text x="72" y="284" font-size="13" font-weight="700" fill="#5b21b6">Pick ONE Primary score (0-4)</text>
+  <text x="72" y="302" font-size="11" fill="#475569">Main score first. If torn, add a comment and review flag.</text>
+
+  <rect x="24" y="324" width="832" height="52" rx="8" fill="#ecfeff" stroke="#67e8f9"/>
+  <circle cx="48" cy="350" r="14" fill="#0891b2"/>
+  <text x="48" y="355" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+  <text x="72" y="344" font-size="13" font-weight="700" fill="#155e75">Set Confidence (1-5) + Comment</text>
+  <text x="72" y="362" font-size="11" fill="#475569">Say how sure you are; note anything unclear.</text>
+
+  <rect x="24" y="384" width="832" height="52" rx="8" fill="#fdf2f8" stroke="#f9a8d4"/>
+  <circle cx="48" cy="410" r="14" fill="#db2777"/>
+  <text x="48" y="415" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">6</text>
+  <text x="72" y="404" font-size="13" font-weight="700" fill="#9d174d">Tick Component boxes</text>
+  <text x="72" y="422" font-size="11" fill="#475569">Context, Behavior, Consequence, Rule - only if present in the Answer.</text>
+
+  <text x="440" y="444" text-anchor="middle" font-size="16" fill="#94a3b8">&#8595;</text>
+
+  <!-- Step 7-8 conditional -->
+  <rect x="24" y="452" width="832" height="52" rx="8" fill="#fff7ed" stroke="#fdba74" stroke-dasharray="6 4"/>
+  <circle cx="48" cy="478" r="14" fill="#f59e0b"/>
+  <text x="48" y="483" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">7</text>
+  <text x="72" y="472" font-size="13" font-weight="700" fill="#9a3412">If rule OR score 3-4: Rule Source + Behavior Form</text>
+  <text x="72" y="490" font-size="11" fill="#475569">Only when a rule is present or Primary is 3 or 4.</text>
+
+  <rect x="24" y="512" width="832" height="52" rx="8" fill="#ecfdf5" stroke="#6ee7b7" stroke-dasharray="6 4"/>
+  <circle cx="48" cy="538" r="14" fill="#059669"/>
+  <text x="48" y="543" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">8</text>
+  <text x="72" y="532" font-size="13" font-weight="700" fill="#065f46">If score 2-4: click Evidence sentence</text>
+  <text x="72" y="550" font-size="11" fill="#475569">Click the sentence in the Answer - no typing needed.</text>
+
+  <text x="440" y="572" text-anchor="middle" font-size="16" fill="#94a3b8">&#8595;</text>
+
+  <!-- Step 9-11 finish -->
+  <rect x="24" y="580" width="832" height="52" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+  <circle cx="48" cy="606" r="14" fill="#64748b"/>
+  <text x="48" y="611" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">9</text>
+  <text x="72" y="600" font-size="13" font-weight="700" fill="#334155">Tricky item? Add review flag or note</text>
+  <text x="72" y="618" font-size="11" fill="#475569">So the team can double-check later.</text>
+
+  <rect x="24" y="640" width="832" height="52" rx="8" fill="#eefaf1" stroke="#35b46b"/>
+  <circle cx="48" cy="666" r="14" fill="#16a34a"/>
+  <text x="48" y="671" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">10</text>
+  <text x="72" y="660" font-size="13" font-weight="700" fill="#166534">Save or Save and Next</text>
+  <text x="72" y="678" font-size="11" fill="#475569">Your scores are stored when you save.</text>
+
+  <rect x="24" y="700" width="832" height="52" rx="8" fill="#eff6ff" stroke="#60a5fa"/>
+  <circle cx="48" cy="726" r="14" fill="#2563eb"/>
+  <text x="48" y="731" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">11</text>
+  <text x="72" y="720" font-size="13" font-weight="700" fill="#1d4ed8">Check My Progress anytime</text>
+  <text x="72" y="738" font-size="11" fill="#475569">See saved scores and check-sample performance.</text>
+</svg>

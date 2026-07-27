@@ -1,0 +1,24 @@
+{
+  "demo": {
+    "password_hash": "$2b$12$EuHd4XvFf.HTKN/k4kxlCeIJeIZrttZ284DwN6iEekpYSCk7.7T1O",
+    "display_name": "Demo Coder",
+    "created_at_utc": "2026-07-27T04:18:56Z",
+    "role": "coder",
+    "training_completed": true,
+    "training_completed_at_utc": "2026-07-27T04:18:56Z",
+    "simple_training_completed": true,
+    "simple_training_completed_at_utc": "2026-07-27T04:18:56Z",
+    "simple_training_version": "answer_labeling_training_v1"
+  },
+  "admin": {
+    "password_hash": "$2b$12$juWcxL5b0NfyyOHBpubrB.TyC79c7sCbMscMbIoAWUj/HgYg8bJ7.",
+    "display_name": "Demo Admin",
+    "created_at_utc": "2026-07-27T04:18:56Z",
+    "role": "admin",
+    "training_completed": true,
+    "training_completed_at_utc": "2026-07-27T04:18:56Z",
+    "simple_training_completed": true,
+    "simple_training_completed_at_utc": "2026-07-27T04:18:56Z",
+    "simple_training_version": "answer_labeling_training_v1"
+  }
+}

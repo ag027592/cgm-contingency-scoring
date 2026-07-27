@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" font-family="Arial, Helvetica, sans-serif">
+  <rect width="880" height="430" fill="#f8fafc" rx="8"/>
+  <text x="24" y="28" font-size="14" font-weight="700" fill="#1e3a8a">Read the Answer as a short story - ask these four questions in order:</text>
+
+  <rect x="24" y="44" width="178" height="88" rx="8" fill="#eef6ff" stroke="#4f8ff7" stroke-width="2"/>
+  <text x="113" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#1d4ed8">1. CONTEXT</text>
+  <text x="113" y="86" text-anchor="middle" font-size="11" fill="#475569">When / where?</text>
+  <text x="113" y="118" text-anchor="middle" font-size="12" font-style="italic" fill="#1e40af">"at dinner"</text>
+
+  <text x="210" y="92" font-size="22" fill="#64748b">&#8594;</text>
+
+  <rect x="228" y="44" width="178" height="88" rx="8" fill="#fff3e8" stroke="#ff9f43" stroke-width="2"/>
+  <text x="317" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">2. BEHAVIOR</text>
+  <text x="317" y="86" text-anchor="middle" font-size="11" fill="#475569">What did they do?</text>
+  <text x="317" y="118" text-anchor="middle" font-size="12" font-style="italic" fill="#9a3412">"I ate rice"</text>
+
+  <text x="414" y="92" font-size="22" fill="#64748b">&#8594;</text>
+
+  <rect x="432" y="44" width="178" height="88" rx="8" fill="#f5f3ff" stroke="#8e6cff" stroke-width="2"/>
+  <text x="521" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#5b21b6">3. OUTCOME</text>
+  <text x="521" y="86" text-anchor="middle" font-size="11" fill="#475569">What happened to glucose?</text>
+  <text x="521" y="118" text-anchor="middle" font-size="12" font-style="italic" fill="#6d28d9">"it went up"</text>
+
+  <text x="618" y="92" font-size="22" fill="#64748b">&#8594;</text>
+
+  <rect x="636" y="44" width="220" height="88" rx="8" fill="#eefaf1" stroke="#35b46b" stroke-width="2"/>
+  <text x="746" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">4. RULE</text>
+  <text x="746" y="86" text-anchor="middle" font-size="11" fill="#475569">What will they do next time?</text>
+  <text x="746" y="118" text-anchor="middle" font-size="12" font-style="italic" fill="#15803d">"so now I eat less"</text>
+
+  <text x="24" y="158" font-size="13" font-weight="700" fill="#0f172a">One Answer, all four parts labeled (Score 4):</text>
+
+  <rect x="24" y="168" width="832" height="56" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="40" y="192" font-size="12" fill="#475569">"</text>
+  <rect x="48" y="178" width="92" height="22" rx="4" fill="#dbeafe"/>
+  <text x="94" y="193" text-anchor="middle" font-size="11" fill="#1e40af">At dinner</text>
+  <text x="148" y="192" font-size="12" fill="#475569">,</text>
+  <rect x="156" y="178" width="78" height="22" rx="4" fill="#ffedd5"/>
+  <text x="195" y="193" text-anchor="middle" font-size="11" fill="#9a3412">I ate rice</text>
+  <text x="240" y="192" font-size="12" fill="#475569">and</text>
+  <rect x="262" y="178" width="88" height="22" rx="4" fill="#ede9fe"/>
+  <text x="306" y="193" text-anchor="middle" font-size="11" fill="#6d28d9">it went up</text>
+  <text x="356" y="192" font-size="12" fill="#475569">,</text>
+  <rect x="364" y="178" width="168" height="22" rx="4" fill="#dcfce7"/>
+  <text x="448" y="193" text-anchor="middle" font-size="11" fill="#15803d">so now I eat half portions</text>
+  <text x="538" y="192" font-size="12" fill="#475569">."</text>
+
+  <text x="40" y="218" font-size="10" fill="#64748b">Context</text>
+  <text x="168" y="218" font-size="10" fill="#64748b">Behavior</text>
+  <text x="278" y="218" font-size="10" fill="#64748b">Outcome</text>
+  <text x="400" y="218" font-size="10" fill="#64748b">Rule</text>
+
+  <text x="24" y="248" font-size="13" font-weight="700" fill="#0f172a">How far along the chain? Pick ONE score (0-4):</text>
+
+  <!-- Score 0 -->
+  <rect x="24" y="258" width="832" height="28" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <circle cx="44" cy="272" r="10" fill="#94a3b8"/>
+  <text x="44" y="276" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">0</text>
+  <text x="62" y="268" font-size="12" font-weight="700" fill="#334155">Nothing connects</text>
+  <text x="62" y="282" font-size="11" fill="#64748b">- general comment only</text>
+  <text x="280" y="276" font-size="11" font-style="italic" fill="#64748b">e.g. "It was fine."</text>
+
+  <!-- Score 1 -->
+  <rect x="24" y="290" width="832" height="28" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <circle cx="44" cy="304" r="10" fill="#64748b"/>
+  <text x="44" y="308" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">1</text>
+  <text x="62" y="300" font-size="12" font-weight="700" fill="#334155">Glucose change only</text>
+  <text x="62" y="314" font-size="11" fill="#64748b">- mentions outcome, no cause</text>
+  <text x="280" y="308" font-size="11" font-style="italic" fill="#64748b">e.g. "My sugar went up."</text>
+
+  <!-- Score 2 -->
+  <rect x="24" y="322" width="832" height="28" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <circle cx="44" cy="336" r="10" fill="#8e6cff"/>
+  <text x="44" y="340" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">2</text>
+  <text x="62" y="332" font-size="12" font-weight="700" fill="#334155">Cause and effect, no plan</text>
+  <text x="62" y="346" font-size="11" fill="#64748b">- context + behavior + outcome, no rule yet</text>
+  <text x="380" y="340" font-size="11" font-style="italic" fill="#64748b">e.g. "When I eat rice, it goes up."</text>
+
+  <!-- Score 3 -->
+  <rect x="24" y="354" width="832" height="28" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <circle cx="44" cy="368" r="10" fill="#f59e0b"/>
+  <text x="44" y="372" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">3</text>
+  <text x="62" y="364" font-size="12" font-weight="700" fill="#334155">Starting to change</text>
+  <text x="62" y="378" font-size="11" fill="#64748b">- rule forming or trying something new</text>
+  <text x="380" y="372" font-size="11" font-style="italic" fill="#64748b">e.g. "I'm trying water instead."</text>
+
+  <!-- Score 4 -->
+  <rect x="24" y="386" width="832" height="28" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <circle cx="44" cy="400" r="10" fill="#35b46b"/>
+  <text x="44" y="404" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">4</text>
+  <text x="62" y="396" font-size="12" font-weight="700" fill="#334155">Clear personal rule</text>
+  <text x="62" y="410" font-size="11" fill="#64748b">- states what they will do from now on</text>
+  <text x="380" y="404" font-size="11" font-style="italic" fill="#64748b">e.g. "So now I skip tortillas at dinner."</text>
+
+  <text x="24" y="428" font-size="11" fill="#475569">Tip: find <tspan font-weight="700">Context</tspan> first. On the form, <tspan font-weight="700">Outcome</tspan> = the <tspan font-weight="700">Consequence</tspan> box.</text>
+</svg>
