@@ -46,7 +46,7 @@ SIMPLE_TRAINING_VERSION = "answer_labeling_training_v1"
 PLATFORM_DISPLAY_NAME = "CGM Contingency Speech Scoring Platform"
 PLATFORM_PAGE_TITLE = "CGM Contingency Speech Scoring"
 PLATFORM_LOGIN_CAPTION = (
-    "G2 Study · Score how participants describe learning from continuous glucose monitoring"
+    "HITL demo · Score how people describe learning from continuous glucose monitoring"
 )
 
 USER_FILE_LOCK = threading.RLock()
@@ -4552,9 +4552,10 @@ def render_code_definition_hover_list(cands: List[tuple]) -> None:
 # ----------------------------- Pages -----------------------------
 
 TASK_SHORT_INTRO = (
-    "Welcome! This is a research **scoring** platform for the **G2 continuous glucose "
-    "monitoring (CGM) study**. You will read short interview answers and score how each "
-    "participant describes the link between their glucose feedback and their behavior. "
+    "Welcome! This is a research **scoring** platform for how people talk about "
+    "**continuous glucose monitoring (CGM)** feedback. You will read short interview "
+    "answers and score how each speaker describes the link between glucose feedback and "
+    "behavior. **This public demo uses synthetic DEMO subjects only** (no PHI). "
     "New here? Open the **Register** tab for a full task overview and to create an account."
 )
 

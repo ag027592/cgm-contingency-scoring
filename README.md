@@ -85,9 +85,16 @@ streamlit run app.py
 | `demo` | `demo1234` | coder |
 | `admin` | `admin1234` | admin |
 
-Suggested walkthrough: sign in as `demo` → complete **Test Drive** → open
-**Annotate** on a few DEMO Q/A items → sign in as `admin` → open the
-**Agreement** view.
+Suggested walkthrough: sign in as `demo` → open **Step 4 · Score Answers** →
+label a few DEMO Q/A items → sign in as `admin` → open the **Agreement** view
+(admin-only metrics appear after multiple coders save labels).
+
+### Annotate UI (synthetic demo)
+
+![Annotate page with bilingual DEMO Q/A](labeling_platform/docs/manual_images/demo-annotate-qa.png)
+
+Bilingual Question / Answer cards, subject progress, Primary Hierarchy 0–4, and
+component marking — all on synthetic `DEMO01` text.
 
 ## Repository layout
 
